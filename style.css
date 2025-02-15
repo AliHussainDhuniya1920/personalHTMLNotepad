@@ -1,0 +1,308 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: white;
+  font-size: 25px;
+  font-weight: 700;
+  max-width: 1920px;
+  width: 100%;
+  
+}
+
+.notepad {
+  padding: 20px;
+  min-height: 100vh;
+  box-sizing: border-box;body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: white;
+    }
+    
+    .notepad {
+      padding: 20px;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    
+    .color-picker {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .color-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid #ccc;
+      transition: transform 0.2s;
+    }
+    
+    .color-circle:hover {
+      transform: scale(1.1);
+    }
+    
+    .custom-color-picker {
+      width: 40px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      background: none;
+    }
+    
+}
+
+
+h4 {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.custom-color-picker {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+}
+
+.save-dropdown-menu {
+  display: none;
+}
+
+.save-dropdown-menu.show {
+  display: block;
+}
+
+.save-dropdown-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-dropdown-menu button {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.save-dropdown-menu button:hover {
+  background-color: #ddd;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Adjust as needed */
+  padding: 10px;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc; /* Optional */
+}
+button {
+  padding: 0.5rem;
+}
+.incrse {
+  font-size: 1.3rem;
+}
+
+
+#reset-btn {
+
+  top: 100px; /* Adjust spacing */
+  background-color: #ff4d4d; /* Example color */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 998;
+}
+
+#reset-btn:hover {
+  background-color: #e63939;
+}
+
+.color-picker {
+  position: fixed;
+  right: 20px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff; /* Background for better visibility */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.color-picker h4 {
+  margin: 5px 0;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+#custom-bg-picker,
+#custom-text-picker {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#reset-bg-btn {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#reset-bg-btn:hover {
+  background-color: #e63939;
+}
+.color-picker {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Responsive: Adjust styles below 500px width */
+@media (max-width: 500px) {
+  .color-picker {
+      right: 0;
+      bottom: 0;
+      top: auto;
+      transform: none;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .color-picker h4 {
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
+  }
+
+  .color-circle {
+      width: 25px;
+      height: 25px;
+      margin: 5px;
+  }
+
+  #custom-bg-picker,
+  #custom-text-picker {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background: none;
+      cursor: pointer;
+  }
+
+  #reset-bg-btn {
+      width: 90%;
+      padding: 8px;
+      font-size: 14px;
+  }
+}
+
+/* Wrapper to center content */
+
+
+/* Ensure the notepad takes full available width within the container */
+.notepad {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ensure toolbar and color picker remain within centered content */
+
+
+/* Mobile adjustments */
+@media (max-width: 500px) {
+  html {
+    font-size: 0.8rem;
+  }
+  .container {
+      width: 95%;
+      padding: 10px;
+      
+  }
+  .incrse {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1200px; /* Adjust based on your preference */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    /* background-color: #4CAF50; */
+  }
+}
+
+#reset-btn {
+  position: sticky;
+  top: 10px;
+  right: 10px;
+  float: right;
+  z-index: 1000;
+}
+
+#reset-btn + span {
+  position: sticky;
+  top: 50px; /* Below the Reset button */
+  right: 10px;
+  float: right;
+  z-index: 1000;
+  color: yellowgreen;
+}
